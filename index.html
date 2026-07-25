@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Kompas</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#3e7d4a">
+
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+
+</head>
+
+<body>
+
+<header>
+<h1>🌿 Kompas</h1>
+<p>Ontdek wat energie geeft.</p>
+</header>
+
+
+<section class="card">
+
+<h2>Hoe voel je je vandaag?</h2>
+
+<label>
+Energie
+<input id="energie" type="range" min="1" max="5" value="3">
+</label>
+
+<label>
+Rust
+<input id="rust" type="range" min="1" max="5" value="3">
+</label>
+
+<label>
+Verbonden
+<input id="verbonden" type="range" min="1" max="5" value="3">
+</label>
+
+
+<textarea id="dagtekst"
+placeholder="Wat houdt je vandaag bezig?"></textarea>
+
+</section>
+
+
+
+<section class="card">
+
+<h2>🌱 Verkenning</h2>
+
+<p id="challenge"></p>
+
+<button onclick="nieuweVerkenning()">
+Nieuwe verkenning
+</button>
+
+</section>
+
+
+
+<section class="card">
+
+<h2>Avondreflectie</h2>
+
+<textarea id="energiebron"
+placeholder="Waar kreeg je energie van?"></textarea>
+
+
+<textarea id="nieuwsgierig"
+placeholder="Wat maakte je nieuwsgierig?"></textarea>
+
+
+<textarea id="onthouden"
+placeholder="Wat wil je onthouden?"></textarea>
+
+
+<button onclick="opslaan()">
+Bewaar vandaag
+</button>
+
+<p id="melding"></p>
+
+</section>
+
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
